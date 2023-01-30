@@ -14,7 +14,8 @@ body {
 
 /* headings and logo */
 
-h1, h2 {
+h1,
+h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -34,7 +35,8 @@ h1, h2 {
     letter-spacing: 4px;
 }
 
-#menu, #logo {
+#menu,
+#logo {
     line-height: 75px;
 }
 
@@ -57,7 +59,7 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image and cover text */
+/* hero image */
 
 #hero-outer {
     height: 600px;
@@ -67,27 +69,32 @@ h1, h2 {
     position: relative;
 }
 
-#cover-text, #cover-text h2 {
+#cover-text,
+#cover-text h2 {
     color: #fff;
 }
 
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url('../images/hero-image.webp') no-repeat center center;
-
-    /* animates zoom effect on loading page */
+    background: url('../images/hero-image') no-repeat center center;
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+
 }
 
-/* creates the level of zoom for hero image */
+/* animates zoom effect on loading page*/
+
+
+/* creates the level of zoom for hero image*/
+
 @keyframes hero-zoom {
-    from{
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
     }
 }
@@ -103,19 +110,18 @@ h1, h2 {
 
     padding-top: 40px;
     padding-left: 10px;
-
     background-color: rgba(241, 109, 107, .7);
 
     bottom: 30px;
     right: 150px;
-
     position: absolute;
 }
 
-/* club ethos */
+/* Club ethos */
 
 #club-ethos {
     height: 600px;
+
 }
 
 #left-about {
@@ -133,12 +139,14 @@ h1, h2 {
 #center-about {
     width: 33%;
     margin: 0 auto;
+
 }
 
 hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
     margin: 5px 0;
+
 }
 
 .left-about-heading {
@@ -191,7 +199,7 @@ hr {
 /* event times */
 
 #times {
-    background-image: url('../images/times-background.webp');
+    background-image: url('../images/dublin-city.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
